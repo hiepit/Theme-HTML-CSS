@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400&display=swap');
+
+/* =================Retset CSS==================== */
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Roboto" !important;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.text-main-color {
+    color: #CC933B;
+}
+
+.text-gray {
+    color: #616161;
+}
+
+::selection {
+    color: #fff;
+    background-color: #CC933B;
+}
+
+@media (max-width: 767px) {
+    .content-to-hide-767 {
+        display: none !important;
+    }
+    .content-to-show-767 {
+        display: flex;
+    }
+}
+
+@media (min-width: 767px) {
+    .content-to-hide-1500 {
+        display: none !important;
+    }
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =================HEADER==================== */
+
+#header {
+    top: 0;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.main-menu {
+    vertical-align: middle;
+}
+
+#header.main-menu {
+    color: black;
+}
+
+.main-menu.nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.navigation-wrap {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+
+.nav-item:hover .nav-link {
+    color: #CC933B !important;
+}
+
+.nav-item.active .nav-link {
+    color: #CC933B !important;
+}
+
+.nav-item:after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #ad8240;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.nav-item:hover:after {
+    bottom: 0;
+    opacity: 1;
+}
+
+.nav-item.active:hover:after {
+    opacity: 0;
+}
+
+.nav-item {
+    position: relative;
+    transition: all 200ms linear;
+}
+
+.nav-item.user {
+    border: solid 1px #CC933B;
+    border-radius: 5px;
+    background-color: #CC933B;
+    color: #fff;
+}
+
+li.username {
+    list-style-position: inside;
+    border-right: solid 3px #DF942F;
+}
+
+#navbar-list-2 {
+    margin: 0px;
+}
+
+#navbar-list-3 a.nav-link {
+    color: white !important;
+    text-transform: uppercase !important;
+}
+
+
+/* ===============SEARH + SOCIAL + POPUP LOGIN=================== */
+
+.search_social_login {
+    background-color: black;
+    color: white;
+}
+
+.search_social_login.fa-user-circle,
+.header-search i {
+    font-size: 20px;
+}
+
+.header-search a,
+.header-search i {
+    color: white;
+}
+
+#div_search {
+    display: inline-flex;
+    align-items: center;
+}
+
+button.popup-login {
+    background-color: #6FAC48;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 279px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#pop_up_login {
+    padding-right: 0px;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.pop_up_login_icon {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+
+/* ===============FOOTER=================== */
+
+
+/* ================================== */
+
+html .scroll-to-top {
+    transition: opacity .3s;
+    background: #404040;
+    border-radius: 4px 4px 0 0;
+    bottom: 0;
+    color: #fff;
+    display: block;
+    height: 9px;
+    opacity: 0;
+    padding: 10px 10px 35px;
+    position: fixed;
+    left: 10px;
+    text-align: center;
+    text-decoration: none;
+    min-width: 50px;
+    z-index: 1040;
+    font-size: .8em
+}
+
+html .scroll-to-top:hover {
+    opacity: 1
+}
+
+html .scroll-to-top.visible {
+    opacity: .75
+}
+
+html .scroll-to-top span {
+    display: inline-block;
+    padding: 0 5px
+}
+
+html.lightbox-opened .scroll-to-top {
+    left: 27px
+}
+
+html.ie11 .scroll-to-top {
+    left: 25px
+}
+
+@media(max-width:991px) {
+    html .scroll-to-top.hidden-mobile {
+        display: none!important
+    }
+}
+
+
+/* ================================== */
+
+.pop_up_login {
+    position: relative;
+}
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+
+.login-popup {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 10px;
+    border: 1px solid #04AA6D;
+    background-color: #04AA6D;
+    z-index: 3;
+    width: 290px;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity .5s linear;
+}
+
+.login-popup.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.form-container {
+    padding: 10px;
+    background-color: white;
+    margin: 0px;
+    width: 100%;
+}
+
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #CC933B;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+
+/* .search_social_login { */
+
+
+/* margin-right: -5px; */
+
+
+/* } */
+
+
+/* ========== RADIO button =========== */
+
+#formLogin {
+    right: 6px;
+}
+
+#formLogin ul.list {
+    font-size: 12px;
+}
+
+#formLogin .list {
+    flex: 0 0 20rem;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#formLogin .list__item {
+    position: relative;
+}
+
+#formLogin .list__item:hover>.label {
+    color: #CC933B;
+}
+
+#formLogin .list__item:hover>.label::before {
+    border: 0.5rem solid #CC933B;
+    margin-right: 2rem;
+}
+
+#formLogin .radio-btn {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#formLogin .radio-btn:checked+.label {
+    color: #CC933B;
+    border-spacing: 2px;
+}
+
+#formLogin .radio-btn:checked+.label::before {
+    margin-right: 2rem;
+    border: 2px solid #959494;
+    background: #CC933B;
+}
+
+#formLogin .label {
+    display: flex;
+    align-items: center;
+    padding: 2px 0;
+    color: #959494;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+#formLogin .label::before {
+    display: inline-block;
+    content: "";
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border: 3px solid #959494;
+    border-radius: 50%;
+    transition: all 0.25s linear;
+}

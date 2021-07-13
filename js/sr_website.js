@@ -4,6 +4,8 @@ $(document).ready(function() {
     // Shop Filter
     $("#show_popup_login").click(function() {
         $('.login-popup').toggleClass("active");
+        $('#icon-up').toggleClass("active");
+        $('#icon-down').toggleClass("active");
     });
 
     // if ($(".popup-youtube") && $(".popup-youtube").length > 0) {

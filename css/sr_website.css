@@ -192,6 +192,19 @@ button.popup-login {
     font-size: 20px;
 }
 
+#show_popup_login i.down,
+i.up {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+
+#show_popup_login i.down.active,
+i.up.active {
+    display: block;
+    opacity: 1;
+}
+
 
 /* ===============FOOTER=================== */
 

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service deremplacement</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- Web Fonts  -->
+    <!-- <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap" rel="stylesheet" type="text/css"> -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css" />
+    <!-- Google recapcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Jquery 3.6.0 -->
+    <script src="/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/lib/jquery/jquery.maphilight.js"></script>
+    <script src="/lib/jquery/jquery.scrollUp.min.js"></script>
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="css/sr_website.css">
+    <!-- JS -->
+    <script src="/js/sr_website.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <!-- Main Menu -->
+        <div class="container main-menu">
+            <nav class="navbar navbar-expand-md navbar-light" style="height: 100%">
+                <a class="navbar-brand" href="/home">
+                    <img src="/img/sr_logo.png" alt="logo" title="Service Deremplacement">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="border-color: white; color:#CC933B; font-size:28px;"></i></span>
+                            </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-list-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container justify-content-end" style="display: flex; padding: 0px;">
+                                <div class="top-header">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item user">
+                                            <a class="nav-link " href="#">Espace privé</a>
+                                        </li>
+                                        <li class="nav-item username">
+                                            <a class="nav-link username" href="#">Identifiant</a>
+                                        </li>
+                                        <li class="nav-item password">
+                                            <a class="nav-link" href="#">Mot de passe</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Se faire remplacer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Actualités</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Devenir agent de remplacement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contactus">Nous Connaître</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Search + Social Media + Login -->
+        <div class="search_social_login">
+            <div class="container search_social_login" style="height: 100%">
+                <div id="search_social_login" class="row" style="height: 100%">
+                    <div class="col-7">
+                        <div id="div_search" class="header-search" style="height: 100%;">
+                            <a class="" href="#"><i class="fas fa-search"></i></a>
+                            <a class="nav-link content-to-hide-767" href="#">VOUS ÊTES AGENT</a>
+                            <a class="nav-link content-to-hide-767" href="#">VOUS ÊTES EXPLOITANT</a>
+                            <nav class="navbar navbar-expand-md navbar-light content-to-show-767 content-to-hide-1500 ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+                                            </button>
+                                <div class="collapse navbar-collapse justify-content-end " id="navbar-list-3">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">VOUS ÊTES AGENT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">VOUS ÊTES EXPLOITANT</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-5 justify-content-end">
+                        <div id="pop_up_login" style="height: 100%;">
+                            <i class="fab fa-facebook pop_up_login_icon"></i>
+                            <i class="fab fa-youtube pop_up_login_icon"></i>
+                            <button id="show_popup_login" class="popup-login justify-content-around">
+                                <div style="padding-top: 10px; padding-bottom: 10px;">
+                                    <i class="far fa-user-circle pop_up_login_icon"></i><span class="content-to-hide-767" >MON ESPACE</span>
+                                </div>
+                                <i id="icon-down" class="fas fa-chevron-down down active"></i>
+                                <i id="icon-up" class="fas fa-chevron-up up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="login-popup" id="formLogin">
+                    <form action="" class="form-container">
+                        <ul class="list">
+                            <li class="list__item">
+                                <input type="radio" class="radio-btn" name="choice" id="agent" />
+                                <label for="agent" class="label">AGENT</label>
+                            </li>
+
+                            <li class="list__item">
+                                <input type="radio" class="radio-btn" name="choice" id="exploitant" />
+                                <label for="exploitant" class="label">EXPLOITANT</label>
+                            </li>
+                        </ul>
+
+                        <input type="text" placeholder="Identifiant" name="email" required/>
+                        <input type="password" placeholder="Mot de passe" name="psw" required/>
+
+                        <button id="buttonLogin" class="popup-login justify-content-between btn">
+                            <div style="padding-top: 10px; padding-bottom: 10px;">
+                                <span class="content-to-hide-767" >SE CONNECTER</span>
+                            </div>
+                            <i class="fas fa-check fa-2x"></i>
+                        </button>
+                        <a href="">Première connexion</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="home.html">ACCUEIL</a></li>
+                            <li><a href="home.html">DEVENIR AGENT DE REMPLACEMENT</a></li>
+                            <li><a href="home.html">NOUS REJOINDRE</a></li>
+                            <li>DÉPOSER SA CANDIDATURE</li>
+                        </ul>
+                    </div>
+                    <h1>Déposer sa candidature</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!-- Form send resume -->
+    <div class="contact_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <div class="contact_message form">
+                        <form id="contact-form" class="send_resume_form" method="POST" action="">
+                            <p>
+                                <label> Civilité *</label>
+                                <input name="name" placeholder="Civilité *" type="text">
+                            </p>
+                            <p>
+                                <label>  Nom *</label>
+                                <input name="first_name" placeholder="First Name *" type="text">
+                            </p>
+                            <p>
+                                <label>  Prénom *</label>
+                                <input name="last_name" placeholder="Last Name *" type="text">
+                            </p>
+                            <p>
+                                <label>  Téléphone *</label>
+                                <input name="phone" placeholder="Phone *" type="tel">
+                            </p>
+                            <p>
+                                <label> Téléphone portable *</label>
+                                <input name="mobile" placeholder="Mobile *" type="text">
+                            </p>
+                            <p>
+                                <label>  Email *</label>
+                                <input name="email" placeholder="Email *" type="email">
+                            </p>
+                            <p>
+                                <label>  Adresse *</label>
+                                <input name="address" placeholder="Address *" type="text">
+                            </p>
+                            <p>
+                                <label> Ville*</label>
+                                <input name="city" placeholder="City *" type="text">
+                            </p>
+                            <p>
+                                <label>Code postal/ Commune</label>
+                                <input name="code_postal" placeholder="Code postal/ Commune" type="text">
+                            </p>
+                            <p>
+                                <label>Date de naissance</label>
+                                <!-- <div class="s_website_form_date input-group date" id="birthday" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input s_website_form_input" data-target="#birthday" name="Custom Date" placeholder="date" />
+                                    <div class="input-group-append" data-target="#birthday" data-toggle="datetimepicker">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-calendar" />
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </p>
+                            <p>
+                                <label>Situation de famille</label>
+                                <input name="family_status " placeholder="CÉLIBATAIRE" type="text">
+                            </p>
+                            <div class="form-select-wrapper">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="selected">Ajouter permis de conduire</option>
+                                    <option value="1">PERMIS A</option>
+                                    <option value="2">PERMIS B</option>
+                                    <option value="3">PERMIS C</option>
+                                    <option value="4">PERMIS C</option>
+                                    <option value="4">PERMIS C</option>
+                                    <option value="5">TOUS les PERMIS</option>
+                                </select>
+                            </div>
+                            <div class="form-select-wrapper">
+                                <label>Ateliers de production</label>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="selected">Activité de production</option>
+                                            <option value="1">Agro-Tourisme</option>
+                                            <option value="2">Apiculture</option>
+                                            <option value="3">Bovins</option>
+                                            <option value="4">Ovins</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="selected">Spécialité</option>
+                                            <option value="1">Engraisseur</option>
+                                            <option value="2">Naisseur</option>
+                                            <option value="3">Transformation</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="selected">Méthode de production</option>
+                                            <option value="1">Secteur Matériel</option>
+                                            <option value="2">Matériel</option>
+                                            <option value="3">Niveau de Compétence</option>
+                                            <option value="4">PERMIS C</option>
+                                            <option value="4">PERMIS C</option>
+                                            <option value="5">Niveau de compétence</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-select-wrapper">
+                                <label>Matériel</label>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="selected">Secteur matériel</option>
+                                            <option value="1">Distribution</option>
+                                            <option value="2">Irrigation</option>
+                                            <option value="3">Tracteur et manutention</option>
+                                            <option value="4">Niveau de compétence</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="selected">Type de matériel</option>
+                                            <option value="1">Tracteur de vigne</option>
+                                            <option value="2">Télescopique</option>
+                                            <option value="3">Quad</option>
+                                            <option value="3">Chenillard</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <label>Moyen de transport</label>
+                                <input name="transports" placeholder="VOITURE" type="text">
+                            </p>
+                            <p>
+                                <label>Type de contrat</label>
+                                <input name="type_of_contract" placeholder="TOUS" type="text">
+                            </p>
+                            <p>
+                                <label>Formation agricole</label>
+                                <input name="agricultural_training" placeholder="Licence, ingénieur" type="text">
+                            </p>
+                            <p>
+                                <label>Expérience</label>
+                                <input name="is_experience" placeholder="Sans expérience" type="text">
+                            </p>
+                            <p>
+                                <label>Nombre d’années d’expérience</label>
+                                <input name="nb_years_experience" placeholder="" type="text">
+                            </p>
+                            <p>
+                                <label>Début date de disponibilité</label>
+                                <input name="start_date_of_available" placeholder="Indifférent" type="text">
+                            </p>
+                            <p>
+                                <label>Zone géographique recherchée</label>
+                                <input name="zone" placeholder="" type="text">
+                            </p>
+                            <p>
+                                <label>Situation actuelle</label>
+                                <input name="school_student" placeholder="Scolaire, étudiant" type="text">
+                            </p>
+
+                            <div class="form-select-wrapper input_file">
+                                <div class="file-upload">
+                                    <div class="file-select">
+                                        <div class="file-select-button">
+                                            <label>Choisir fichier</label>
+                                            <input type="file" name="cv" id="cv" />
+                                        </div>
+                                        <div class="file-select-name" id="noFile">No file chosen...</div>
+                                    </div>
+                                </div>
+                                <span>Joindre un CV (facultatif)</span>
+                            </div>
+
+                            <div class="form-select-wrapper ">
+                                <select class="form-select " aria-label="Default select example ">
+                                    <option value="selected ">Choisir le ou les destinataires *</option>
+                                    <option value="1 ">Service De Remplacement Rhône</option>
+                                    <option value="2 ">Service De Remplacement Rhône</option>
+                                    <option value="3 ">Service De Remplacement Rhône</option>
+                                    <option value="4 ">Service De Remplacement Rhône</option>
+                                    <option value="5 ">Service De Remplacement Rhône</option>
+                                </select>
+                            </div>
+                            <p class="quick_note ">Pour augmenter vos chances de trouver un emploi dans l’agriculture, votre candidature est également transmise à la bourse à l’emploi de notre partenaire ANEFA</p>
+                            <span class="captcha msg-error error"></span>
+                            <div id="contactusCaptcha" class="g-recaptcha" data-sitekey="6LcMBpYbAAAAABW3dUvxY-1PHK-Vt106EiQwV0FP"></div>
+                            </br>
+                            <button id="btn-submit " type="submit ">ENVOYER</button>
+                            <button id="btn-cancel " type="reset ">ANNULER</button>
+                            <p class="form-messege "></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-0 bg_resume ">
+                    <img src="img/Image_placeholder_dcu.png " alt=" ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END Form send resume -->
+
+
+
+    <footer class="sr_footer bg-light text-inverse ">
+        <div class="container py-13 py-md-15 ">
+            <div class="row gy-6 gy-lg-0 " style="padding-top: 15px; ">
+                <div class="col-md-4 col-lg-3 ">
+                    <div class="widget text-gray ">
+                        <h4 class="widget-title text-main-color mb-3 ">A PROPOS</h4>
+                        <p>Les Services de Remplacement sont des associations groupements d’employeurs à vocation de remplacement, dirigés par des agriculteurs bénévoles</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 ">
+                    <div class="widget ">
+                        <h4 class="widget-title text-main-color mb-3 ">LIENS Utiles</h4>
+                        <ul class="list-unstyled mb-0 text-gray ">
+                            <li>Les motifs d’absence</li>
+                            <li>WebTV</li>
+                            <li><a href="# ">Déposer sa candidature</a></li>
+                            <li>Plan du site</li>
+                            <li>Politique de confidentialité</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 ">
+                    <div class="widget ">
+                        <h4 class="widget-title text-main-color mb-3 ">PARTENAIRES</h4>
+                        <embed src="/img/image.svg " />
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 ">
+                    <div class="widget text-gray ">
+                        <img class="mb-4 " src="/img/sr_logo.png " alt="Logo ">
+                        <p class="text-gray pe-xl-15 pe-xxl-17 ">14, rue de la Boétie - 75008 </br>Paris Tél: 01 42 65 86 14 <a href="mailto:# ">accueil@servicederemplacement.fr</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-6 gy-lg-0 " style="margin-top: 30px; ">
+                <div class="col-md-12 col-lg-12 ">
+                    <p class="text-gray " style="width: 100%; text-align: right; ">Qui sommes-nous / WebTV / Cookies - Protection des données personnelles / CGU / Nous contacter</p>
+                </div>
+            </div>
+        </div>
+        <!-- TODO: need move to odoo -->
+        <a id="scrollUp" href="#top " title="Scroll to top"></a>
+        <!-- <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 2147483647; display: none;"></a> -->
+    </footer>
+
+</body>
+
+</html>

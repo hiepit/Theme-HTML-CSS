@@ -20,6 +20,9 @@ body {
   .container {
     width: 100% !important;
   }
+  .right-col::after {
+    display: none;
+  }
 }
 
 /* Tablet */
@@ -1266,4 +1269,37 @@ area:hover {
   color: #BF7511;
   font-weight: bold;
   margin-bottom: 0px;
+}
+
+#btn-envoyer {
+    font-weight: 400;
+    width: 180px;
+    height: 45px;
+    line-height: 42px;
+    text-transform: capitalize;
+    border: none;
+    background: #4D8B47;
+    color: #ffffff !important;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 4px;
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+.right-col::after {
+  content: '';
+  background-image: url('/img/Image_placeholder_etl.png');
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  width: 130%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
 }

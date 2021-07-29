@@ -21,3 +21,7 @@ https://en.bem.info/methodology/key-concepts/
 https://caniuse.com/?search=media%20que
 handle on lt (<) IE 9
 https://github.com/scottjehl/Respond
+
+
+-- cut image, drop image
+https://www.iloveimg.com/download/l7As7r20pnnzgtxwmjb9fp8vj6b6593Ahcq8lx6k7nAxv0cn9wvzv66trtzAAq358mzvxmtsqqn3vglbybmwvcp080mbwk44krlb65dppswmbp0qjr9h44zcp233ky2rsfqwcdtk2gd3h74cc1sbhd4cg47nkkbA8ydyclbc56rsthxdx4n1/5

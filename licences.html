@@ -186,17 +186,165 @@
     <div class="licences_area">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <div class="licences_content">
-                        <img class="img_title" src="/img/title.svg" alt="Ateliers de production">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-md-12">
-                    <div class="licences_title">
+                <div class="col-lg-7 col-md-12">
+                    <form id="candidacy_form" class="candidacy_form" method="POST" action="">
+                        <div class="licences_title">
+                            <span>Ateliers de production</span>
+                        </div>
+                        <div id="chevron">Ateliers de production</div>
+                        <div class="licences_title_content">
+                            <p>Mode d’emploi <br/>consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                                no sea takimata sanctus</p>
+                        </div>
+                        <div class="form-select-licences">
+                            <div id="select_activity" >
+                                <div class="form-select select_activity">
+                                    <span>Activité de production</span>
+                                    <i class="fas fa-caret-down fa-2x down active"></i>
+                                    <i class="fas fa-caret-left fa-2x up"></i>
+                                </div>
+                                <div class="option_select_activity active">
+                                    <label class="rad-label">
+                                        <input type="radio" value="Agro-Tourisme" class="rad-input" name="select_activity"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Agro-Tourisme</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Agriculture" class="rad-input" name="select_activity"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Agriculture</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Bovins" class="rad-input" name="select_activity"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Bovins</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Ovins" class="rad-input" name="select_activity"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Ovins</div>
+                                    </label>
+                                </div>
+                                <div id="value_selected_activity" class="value_selected">
+                                    <i class="fas fa-circle"></i><span>Please choose!</span>
+                                </div>
+                            </div>
 
-                    </div>
+                            <div id="select_speciality" >
+                                <div class="form-select select_speciality">
+                                    <span>Spécialité</span>
+                                    <i class="fas fa-caret-down fa-2x down active"></i>
+                                    <i class="fas fa-caret-left fa-2x up"></i>
+                                </div>
+                                <div class="option_select_speciality active">
+                                    <label class="rad-label">
+                                        <input type="radio" value="Engraisseur" class="rad-input" name="select_speciality"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Engraisseur</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Naisseur" class="rad-input" name="select_speciality"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Naisseur</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Transformation" class="rad-input" name="select_speciality"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Transformation</div>
+                                    </label>
+                                </div>
+                                <div id="value_selected_speciality" class="value_selected">
+                                    <i class="fas fa-circle"></i><span>Please choose!</span>
+                                </div>
+                            </div>
+
+                            <div id="select_method">
+                                <div class="form-select select_method">
+                                    <span>Méthode de production</span>
+                                    <i class="fas fa-caret-down fa-2x down active"></i>
+                                    <i class="fas fa-caret-left fa-2x up"></i>
+                                </div>
+                                <div class="option_select_method">
+                                    <label class="rad-label">
+                                        <input id="item_1" type="checkbox" value="Secteur Matériel" class="rad-input" name="select_method"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Secteur Matériel</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input id="item_2" type="checkbox" value="Matériel" class="rad-input" name="select_method"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Matériel</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input id="item_3" type="checkbox" value="Niveau De Compétence" class="rad-input" name="select_method"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Niveau De Compétence</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input id="item_4" type="checkbox" value="Indépendant" class="rad-input" name="select_method"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Indépendant</div>
+                                    </label>
+                                </div>
+                                <div id="value_selected_method" class="value_selected">
+                                </div>
+                            </div>
+
+                            <div id="select_method_2">
+                                <div class="form-select select_method_2">
+                                    <span>Méthode de production</span>
+                                    <i class="fas fa-caret-down fa-2x down active"></i>
+                                    <i class="fas fa-caret-left fa-2x up"></i>
+                                </div>
+                                <div class="option_select_method_2">
+                                    <p>Réaliser la traite</p>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Acquise" class="rad-input" name="option_select_method_1"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Acquise</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="En cours d’acquisition" class="rad-input" name="option_select_method_1"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">En cours d’acquisition</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Non acquise" class="rad-input" name="option_select_method_1"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Non acquise</div>
+                                    </label>
+                                    <p>Réaliser l’alimentation</p>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Acquise" class="rad-input" name="option_select_method_2"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Acquise</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="En cours d’acquisition" class="rad-input" name="option_select_method_2"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">En cours d’acquisition</div>
+                                    </label>
+                                    <label class="rad-label">
+                                        <input type="radio" value="Non acquise" class="rad-input" name="option_select_method_2"/>
+                                        <div class="rad-design"></div>
+                                        <div class="rad-text">Non acquise</div>
+                                    </label>
+                                </div>
+                                <div id="value_selected_method_2_1" class="value_selected">
+                                    <p>Réaliser l’alimentation</p>
+                                    <i class="fas fa-circle"></i><span>Please choose!</span>
+                                </div>
+                                <div id="value_selected_method_2_2" class="value_selected">
+                                    <p>Réaliser l’alimentation</p>
+                                    <i class="fas fa-circle"></i><span>Please choose!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="btn-envoyer">ENVOYER</button>
+                    </form>
+                </div>
+                <div class="col-lg-5 d-none d-md-none d-lg-block">
+                    <img src="img/Image_placeholder_etl.png" alt="">
                 </div>
             </div>
         </div>
@@ -246,8 +394,8 @@
             </div>
         </div>
         <!-- TODO: need move to odoo -->
-        <a id="scrollUp" href="#top " title="Scroll to top"></a>
-        <!-- <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 2147483647; display: none;"></a> -->
+        <!-- <a id="scrollUp" href="#top " title="Scroll to top"></a> -->
+        <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 2147483647; display: none;"></a>
     </footer>
 
 </body>

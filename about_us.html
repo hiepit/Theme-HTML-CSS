@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service deremplacement</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- Web Fonts  -->
+    <!-- <link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&amp;display=swap" rel="stylesheet" type="text/css"> -->
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.min.css" />
+    <!-- Google recapcha -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- Jquery 3.6.0 -->
+    <script src="/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="/lib/jquery/jquery.maphilight.js"></script>
+    <script src="/lib/jquery/jquery.scrollUp.min.js"></script>
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" href="css/sr_website.css">
+    <!-- JS -->
+    <script src="/js/sr_website.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <!-- Main Menu -->
+        <div class="container main-menu">
+            <nav class="navbar navbar-expand-md navbar-light" style="height: 100%">
+                <a class="navbar-brand" href="/home">
+                    <img src="/img/sr_logo.png" alt="logo" title="Service Deremplacement">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-2" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="border-color: white; color:#CC933B; font-size:28px;"></i></span>
+                            </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-list-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container justify-content-end" style="display: flex; padding: 0px;">
+                                <div class="top-header">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item user">
+                                            <a class="nav-link " href="#">Espace privé</a>
+                                        </li>
+                                        <li class="nav-item username">
+                                            <a class="nav-link username" href="#">Identifiant</a>
+                                        </li>
+                                        <li class="nav-item password">
+                                            <a class="nav-link" href="#">Mot de passe</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Accueil</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Se faire remplacer</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Actualités</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Devenir agent de remplacement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/contactus">Nous Connaître</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Search + Social Media + Login -->
+        <div class="search_social_login">
+            <div class="container search_social_login" style="height: 100%">
+                <div id="search_social_login" class="row" style="height: 100%">
+                    <div class="col-7">
+                        <div id="div_search" class="header-search" style="height: 100%;">
+                            <a class="" href="#"><i class="fas fa-search"></i></a>
+                            <a class="nav-link content-to-hide-767" href="#">VOUS ÊTES AGENT</a>
+                            <a class="nav-link content-to-hide-767" href="#">VOUS ÊTES EXPLOITANT</a>
+                            <nav class="navbar navbar-expand-md navbar-light content-to-show-767 content-to-hide-1500 ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-3" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+                                            </button>
+                                <div class="collapse navbar-collapse justify-content-end " id="navbar-list-3">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">VOUS ÊTES AGENT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">VOUS ÊTES EXPLOITANT</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-5 justify-content-end">
+                        <div id="pop_up_login" style="height: 100%;">
+                            <i class="fab fa-facebook pop_up_login_icon"></i>
+                            <i class="fab fa-youtube pop_up_login_icon"></i>
+                            <button id="show_popup_login" class="popup-login justify-content-around">
+                                <div style="padding-top: 10px; padding-bottom: 10px;">
+                                    <i class="far fa-user-circle pop_up_login_icon"></i><span class="content-to-hide-767" >MON ESPACE</span>
+                                </div>
+                                <i id="icon-down" class="fas fa-chevron-down down active"></i>
+                                <i id="icon-up" class="fas fa-chevron-up up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="login-popup" id="formLogin">
+                    <form action="" class="form-container">
+                        <ul class="list">
+                            <li class="list__item">
+                                <input type="radio" class="radio-btn" name="choice" id="agent" />
+                                <label for="agent" class="label">AGENT</label>
+                            </li>
+
+                            <li class="list__item">
+                                <input type="radio" class="radio-btn" name="choice" id="exploitant" />
+                                <label for="exploitant" class="label">EXPLOITANT</label>
+                            </li>
+                        </ul>
+
+                        <input type="text" placeholder="Identifiant" name="email" required/>
+                        <input type="password" placeholder="Mot de passe" name="psw" required/>
+
+                        <button id="buttonLogin" class="popup-login justify-content-between btn">
+                            <div style="padding-top: 10px; padding-bottom: 10px;">
+                                <span class="content-to-hide-767" >SE CONNECTER</span>
+                            </div>
+                            <i class="fas fa-check fa-2x"></i>
+                        </button>
+                        <a href="">Première connexion</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--breadcrumbs area start-->
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <ul>
+                            <li><a href="home.html">ACCUEIL</a></li>
+                            <li><a href="home.html">DEVENIR AGENT DE REMPLACEMENT</a></li>
+                            <li><a href="home.html">NOUS REJOINDRE</a></li>
+                            <li>DÉPOSER SA CANDIDATURE</li>
+                        </ul>
+                    </div>
+                    <h1>Déposer sa candidature</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs area end-->
+
+    <!-- About Us -->
+    <div class="section_list_title">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-12 main_section">
+                    <div class="row about_us_item item_1">
+                        <div class="col-lg-3 col-md-4 item-title-left">
+                            <h5>NOS VALEURS</h5>
+                            <i class="fas fa-2x fa-info-circle "></i>
+                        </div>
+                        <div class="col-lg-7 col-md-8 item-title-right">
+                            <img title="NOS VALEURS" alt="NOS VALEURS" src="/img/bg_about_us_1.png"/>
+                        </div>
+                    </div>
+                    <div class="row value_item_1">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-md-12">
+                                    <div class="title_of_value">
+                                        <p>NOS VALEURS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-12">
+                                    <div class="title_our_value_content">
+                                        <h5>Une gestion associative par des agriculteurs engagés</h5>
+                                        <p>Le Service de Remplacement est une association et non une entreprise au sens commercial du terme. Il est dirigé par des agriculteurs bénévoles. Il apporte un service à des adhérents et non un produit à des clients. Etre adhérent, c’est être fortement attaché à une cause, c’est partager un esprit, c’est s’engager. Etre adhérent donne des droits (être remplacé) mais aussi des devoirs (respecter l’esprit et la lettre du remplacement, respecter les statuts et le règlement intérieur, participer à la vie du Service).</p>
+
+                                        <h5>Une mission reconnue d’utilité sociale</h5>
+                                        <p>La mission du Service de Remplacement est sociale avant d’être économique. Le Service de Remplacement est sans but lucratif et sa gestion est désintéressée. En cela, le Service de Remplacement est reconnu d’utilité sociale. Cette reconnaissance ne vise toutefois que le remplacement des chefs d’exploitation agricole et des membres non salariés de leur famille.</p>
+
+                                        <h5>Un service ouvert à tous les agriculteurs sur tout le territoire</h5>
+                                        <p>Le Service de Remplacement est une association et non une entreprise au sens commercial du terme. Il est dirigé par des agriculteurs bénévoles. Il apporte un service à des adhérents et non un produit à des clients. Etre adhérent, c’est être fortement attaché à une cause, c’est partager un esprit, c’est s’engager. Etre adhérent donne des droits (être remplacé) mais aussi des devoirs (respecter l’esprit et la lettre du remplacement, respecter les statuts et le règlement intérieur, participer à la vie du Service).</p>
+
+                                        <h5>Un fonctionnement en réseau</h5>
+                                        <p>Les Services de Remplacement sont organisés selon un système fédératif qui leur confère:<br/>
+                                            Une proximité du terrain, des adhérents et de leurs besoins, des salariés et candidats au métier d’agent de remplacement, mais également des centres de décisions,<br/>
+                                            Une réactivité, grâce à ces relais, pour diffuser des informations ou faire remonter des alertes spécifiques,<br/>
+                                            Une efficacité, puisque réunis, les Services de Remplacement atteignent une taille critique qui leur permet d’envisager des actions que seuls ils n’auraient pu faire,<br/>
+                                            Une représentativité, puisque réunis, les Services de Remplacement de tout le territoire et de toutes les productions acquièrent un poids économique et politique fort.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value_item_1_desciption">
+                            <div class="value_item_1_desciption_1">
+                                <div class="value_item_1_desciption_1_title">
+                                    <i class="fas fa-3x fa-caret-right"></i><p>UN ESPRIT DE SOLIDARITÉ ENTRE AGRICULTEURS</p>
+                                </div>
+                                <p>Le Service de Remplacement inscrit sa démarche dans un esprit de solidarité entre agriculteurs et se distingue en ce sens d’une entreprise intérimaire ou commerciale. C’est une démarche humaniste entre agriculteurs pour assurer la pérennité de leur outil de travail en cas d’absences subies ou choisies qui entraîne une obligation d’assistance mutuelle (organiser collectivement leur remplacement).
+                                    Cet esprit se retrouve particulièrement dans la notion d’ « assurance coup dur » incarnée par le Service de Remplacement. Le principe de solidarité se traduit également par la qualité de groupement d’employeurs conférée au Service (notion de co-employeurs) et dans la responsabilité solidaire des adhérents</p>
+                            </div>
+                            <div class="value_item_1_desciption_1">
+                                <div class="value_item_1_desciption_1_title">
+                                    <i class="fas fa-3x fa-caret-right"></i><p>UN ESPRIT DE SOLIDARITÉ ENTRE AGRICULTEURS</p>
+                                </div>
+                                <p>Implanté localement, le Service de Remplacement remplit un service de proximité, rapide, en substitut de l’exploitant(e), du conjoint(e), de l’aide familial(e) absent.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row about_us_item item_2">
+                        <div class="col-lg-3 col-md-4 item-title-left">
+                            <h5>UN PEU D'HISTOIRE</h5>
+                            <i class="fas fa-2x fa-info-circle "></i>
+                        </div>
+                        <div class="col-lg-7 col-md-8 item-title-right">
+                            <img title="UN PEU D'HISTOIRE" alt="UN PEU D'HISTOIRE" src="/img/bg_about_us_2.png"/>
+                        </div>
+                    </div>
+                    <div class="row value_item_2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="title_of_value">
+                                        <p>UN PEU D'HISTOIRE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-10">
+                                    <div class="title_history_content">
+                                        <p>Le remplacement en agriculture a été lancé en 1972 sur la base d’initiatives locales et d’une expérimentation en régions. Les Services de Remplacement se sont alors progressivement mis en place au sein des départements.</p>
+                                        <p>En 1988, « conscientes de l’acquis incontestable que constitue cet outil de développement (le service de remplacement) et la promotion des hommes qu’il a engendrée », les organisations professionnelles agricoles, par l’intermédiaire du Conseil de l’Agriculture Française, décident d’apporter un appui opérationnel aux Services de Remplacement et créent à cette fin le Bureau National des Services de Remplacement. Celui-ci est alors une organisation informelle, soutenue par l’Association Nationale pour le Développement Agricole et dont la présidence est confiée au président du C.n.j.a.</p>
+                                        <h6>En 1998, une deuxième étape est franchie dans la structuration nationale du réseau des Services de Remplacement. Le Conseil de l’Agriculture Française crée la Fédération Nationale des Services de Remplacement (F.n.s.r.) avec pour objectifs de</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row_history_content_blog">
+                                <div class="col-lg-3 col-md-10 title_history_content_blog">
+                                    <p>Créer une entité « Services de Remplacement » dans laquelle chaque département puisse s’exprimer, échanger, communiquer et demander conseil.</p>
+                                </div>
+                                <div class="col-lg-3 col-md-10 title_history_content_blog">
+                                    <p>Favoriser l’organisation et la structuration des Services de Remplacement et de leurs actions dans les départements.</p>
+                                </div>
+                                <div class="col-lg-3 col-md-10 title_history_content_blog">
+                                    <p>L’ensemble des Services de Remplacement est adhérent à la fédération nationale.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-10 end_value_item_2">
+                                    <p>En 2009, la F.n.s.r. devient ‘Service de Remplacement France’, dans un effort de l’ensemble du réseau d’adopter une identité commune.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="value_item_1_desciption">
+                            <div class="value_item_1_desciption_1">
+                                <div class="value_item_1_desciption_1_title">
+                                    <i class="fas fa-3x fa-caret-right"></i><p>4 DÉCEMBRE 1972</p>
+                                </div>
+                                <p>C’est lors de la conférence annuelle agricole entre le Gouvernement et les Organisations Professionnelles Agricoles le 4 décembre 1972 que le Premier Ministre et le Ministre de l’agriculture annoncent la généralisation des Services de Remplacement sur tout le territoire français.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row about_us_item item_3">
+                        <div class="col-lg-3 col-md-4 item-title-left">
+                            <h5>LA FÉDÉRATION NATIONALE</h5>
+                            <i class="fas fa-2x fa-info-circle "></i>
+                        </div>
+                        <div class="col-lg-7 col-md-8 item-title-right">
+                            <img title="LA FÉDÉRATION NATIONALE" alt="LA FÉDÉRATION NATIONALE" src="/img/bg_about_us_3.png"/>
+                        </div>
+                    </div>
+                    <div class="row value_item_3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-md-12">
+                                    <div class="title_of_value">
+                                        <p>LA FÉDÉRATION NATIONALE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-10 col-md-12">
+                                    <div class="title_national_federation_content">
+                                        <div class="sub_title">
+                                            <span>MISSIONS</span>
+                                        </div>
+
+                                        <p>> Fédérer, représenter et défendre l’ensemble des Services de Remplacement adhérents présents sur tout le territoire;</p>
+                                        <p>> Structurer et organiser le réseau et ses actions;</p>
+                                        <p>> Orienter, aider, faire avancer le réseau en mutualisant les moyens humains et techniques, en harmonisant sans uniformiser et en professionnalisant les pratiques;</p>
+                                        <p>> Décider, décliner et être garant de la politique nationale du remplacement répondant avec efficacité aux besoins des agriculteurs.</p>
+
+                                        <div class="sub_title">
+                                            <span>LE CONSEIL D’ADMINISTRATION</span>
+                                        </div>
+                                        <p>La fédération nationale fonctionne avec un Conseil d’Administration de 34 membres répartis en trois collèges.</p>
+
+                                        <!-- TODO: update right data for table -->
+                                        <table class="table table-borderless">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">Collège « membres institutionnels »</th>
+                                                <th scope="col">Collège « membres utilisateurs »</th>
+                                                <th scope="col">Collège « membres associés »</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td>Nicolas Sarthou (Jeunes agriculteurs)</td>
+                                                <td>Nathalie Blandin (Grand Est)</td>
+                                                <td>@Vincent Pennober (Confédération Paysanne)</td>
+                                              </tr>
+                                              <tr>
+                                                <td >François-Etienne Mercier (Jeunes agriculteurs)</td>
+                                                <td>Jean-Paul Gaxotte (Grand Est)</td>
+                                                <td>Yvette Lainé (Coordination Rurale)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Eric Fleury (Jeunes agriculteurs)</td>
+                                                <td>Marc Spanjers (Nouvelle Aquitaine)</td>
+                                                <td>Philippe Faucon (FNGEAR)</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Nicolas Sarthou (Jeunes agriculteurs)</td>
+                                                <td>Nathalie Blandin (Grand Est)</td>
+                                                <td></td>
+                                              </tr>
+                                              <tr>
+                                                <td>Nicolas Sarthou (Jeunes agriculteurs)</td>
+                                                <td>Nathalie Blandin (Grand Est)</td>
+                                                <td></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+
+                                        <div class="sub_title">
+                                            <span>LE BUREAU</span>
+                                        </div>
+                                        <p><b>Président:</b> Nicolas Sarthou<br/>
+                                            <b>Vice-Président:</b> Luc Pierron<br/>
+                                            <b>Secrétaire:</b> Laurence Lubrun<br/>
+                                            <b>Trésorier:</b> Nicolas Treins<br/>
+                                            <b>Membres:</b> Jeanette Meerman, Frédéric Pelisse, Jacqueline Cottier, Jérôme Ville, François-Etienne Mercier, Nathalie Blandin (invitée), David Poupard (invité).
+                                            </p>
+
+                                        <div class="sub_title">
+                                            <span>L’ÉQUIPE ADMINISTRATIVE</span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4"></div>
+                                            <div class="col-lg-10"></div>
+                                        </div>
+
+                                        <p><b>Directeur:</b> Franck Laur // franck.laur@servicederemplacement.fr<br/>
+                                            <b>Conseillers:</b> Karim Cheurfa Molinier // karim.cheurfamolinier@servicederemplacement.fr<br/>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tarik Zahidi // tarik.zahidi@servicederemplacement.fr<br/>
+                                            <b>Secrétaire:</b> Nadjet Abdi // nadjet.abdi@servicederemplacement.fr</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END About Us -->
+
+
+
+    <footer class="sr_footer bg-light text-inverse ">
+        <div class="container py-13 py-md-15 ">
+            <div class="row gy-6 gy-lg-0 " style="padding-top: 15px; ">
+                <div class="col-md-4 col-lg-3 ">
+                    <div class="widget text-gray ">
+                        <h4 class="widget-title text-main-color mb-3 ">A PROPOS</h4>
+                        <p>Les Services de Remplacement sont des associations groupements d’employeurs à vocation de remplacement, dirigés par des agriculteurs bénévoles</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 ">
+                    <div class="widget ">
+                        <h4 class="widget-title text-main-color mb-3 ">LIENS Utiles</h4>
+                        <ul class="list-unstyled mb-0 text-gray ">
+                            <li>Les motifs d’absence</li>
+                            <li>WebTV</li>
+                            <li><a href="# ">Déposer sa candidature</a></li>
+                            <li>Plan du site</li>
+                            <li>Politique de confidentialité</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3 ">
+                    <div class="widget ">
+                        <h4 class="widget-title text-main-color mb-3 ">PARTENAIRES</h4>
+                        <embed src="/img/image.svg " />
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 ">
+                    <div class="widget text-gray ">
+                        <img class="mb-4 " src="/img/sr_logo.png " alt="Logo ">
+                        <p class="text-gray pe-xl-15 pe-xxl-17 ">14, rue de la Boétie - 75008 </br>Paris Tél: 01 42 65 86 14 <a href="mailto:# ">accueil@servicederemplacement.fr</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-6 gy-lg-0 " style="margin-top: 30px; ">
+                <div class="col-md-12 col-lg-12 ">
+                    <p class="text-gray " style="width: 100%; text-align: right; ">Qui sommes-nous / WebTV / Cookies - Protection des données personnelles / CGU / Nous contacter</p>
+                </div>
+            </div>
+        </div>
+        <!-- TODO: need move to odoo -->
+        <!-- <a id="scrollUp" href="#top " title="Scroll to top"></a> -->
+        <a id="scrollUp" href="#top" title="Scroll to top" style="position: fixed; z-index: 2147483647; display: none;"></a>
+    </footer>
+
+</body>
+
+</html>

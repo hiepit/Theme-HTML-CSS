@@ -146,6 +146,17 @@ $(document).ready(function() {
         scrollText: '<i class="fa fa-angle-double-up"></i>',
     });
 
+    // Tooggle title about us
+    $('.about_us_item.item_1').click(function(e) {
+      $('.value_item_1').toggle(500);
+    });
+    $('.about_us_item.item_2').click(function(e) {
+      $('.value_item_2').toggle(500);
+    });
+    $('.about_us_item.item_3').click(function(e) {
+      $('.value_item_3').toggle(500);
+    });
+
 });
 
 $(window).on("scroll", function() {

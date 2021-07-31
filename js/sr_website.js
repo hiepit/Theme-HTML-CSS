@@ -149,12 +149,18 @@ $(document).ready(function() {
     // Tooggle title about us
     $('.about_us_item.item_1').click(function(e) {
       $('.value_item_1').toggle(500);
+      $('.item_1 .item-title-left').toggleClass("active");
+      $('.item_1 .item-title-right').toggleClass("active");
     });
     $('.about_us_item.item_2').click(function(e) {
       $('.value_item_2').toggle(500);
+      $('.item_2 .item-title-left').toggleClass("active");
+      $('.item_2 .item-title-right').toggleClass("active");
     });
     $('.about_us_item.item_3').click(function(e) {
       $('.value_item_3').toggle(500);
+      $('.item_3 .item-title-left').toggleClass("active");
+      $('.item_3 .item-title-right').toggleClass("active");
     });
 
 });

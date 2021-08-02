@@ -1486,39 +1486,181 @@ area:hover {
 .item-title-right.active {
   width: 85%;
 }
+
+/* =================WEBTV========================== */
+.col_webtv {
+  padding: 0;
+}
+
+.webtv-title {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  color: white;
+  margin: 30px 0px;
+  position: relative;
+  background-image: url('/img/bg_webtv_title.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+.webtv-title h5{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0px 50px;
+}
+.webtv-title p {
+  margin: 0px 50px;
+  font-size: 19px;
+  word-wrap: normal;
+}
+.webtv-date {
+  font-size: 12px;
+  color: #818181;
+  font-weight: bold;
+}
+.our_latests_webtv_right_quote h6,
+.webtv-video-title h6 {
+  font-size: 16px;
+  color: #616161;
+  font-weight: bold;
+}
+.our_latests_webtv_right_quote span,
+.webtv-video-title span {
+  font-size: 16px;
+  color: #616161;
+}
+.text-quote {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.our_latests_webtv_right_quote p,
+.text-quote p{
+  margin-bottom: 0px;
+  border-left: 2px solid #CC933B;
+  padding-left: 15px;
+  font-size: 16px;
+  color: #616161;
+}
+
+.video-youtube{
+  justify-content: flex-start;
+}
+.video-youtube iframe{
+  width: 100%;
+  height: 550px;
+}
+.webtv-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.webtv-icons .custom_icon {
+  width: 40px;
+  height: 40px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our_latest_webtv_title {
+  position: relative;
+  width: fit-content;
+  height: 50px;
+  border: 2px solid #AD7423;
+  border-radius: 50px;
+  color: #DF942F;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0px;
+  padding: 0 15px;
+}
+
+.our_latest_webtv_title p {
+  margin: 0;
+}
+
+.list_webtv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.our_latests_webtv {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 13px 1px;
+  background-repeat: repeat-x;
+}
+
+.our_latests_webtv_left{
+  flex: 1;
+}
+
+.our_latests_webtv_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our_latests_webtv_right{
+  flex: 2;
+}
+
 /* ================== FOR CUSTOM RESPONSIVE ====================== */
 /* Common Mobile */
 @media only screen and (max-width: 739px) {
   .container {
-  width: 100% !important;
+    width: 100% !important;
   }
   .right-col::after {
-  display: none !important;
+    display: none !important;
   }
   .about_us_item {
-  margin: 10px 0px ;
-  height: 100px;
+    margin: 10px 0px ;
+    height: 100px;
   }
   .value_item_3,
   .value_item_2,
   .value_item_1{
-  margin-top: 30px !important;
+    margin-top: 30px !important;
   }
   .breadcrumbs_area {
-  background-position: 16%;
-  height: 105px;
+    background-position: 16%;
+    height: 105px;
   }
   .contact_message textarea {
-  height: 120px;
+    height: 120px;
   }
   .contact_message.content {
-  margin-bottom: 52px;
+    margin-bottom: 52px;
   }
   .contact_message button {
-  width: 100px;
+    width: 100px;
   }
   .content-to-hide-767 {
-  display: none !important;
+    display: none !important;
   }
   .content-to-show-767 {
     display: flex;
@@ -1529,12 +1671,21 @@ area:hover {
   .item-title-left h5 {
     font-size: 12px;
   }
+  .webtv-title {
+    background-image: linear-gradient(#DF942F, #DF942F);
+  }
+  .webtv-title h5 {
+    font-size: 20px;
+  }
+  .webtv-title p {
+    font-size: 15px;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
   .container {
-  max-width: 960px !important;
+    max-width: 960px !important;
   }
 }
 

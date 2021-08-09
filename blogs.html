@@ -26,10 +26,14 @@
     <script src="/lib/jquery/jquery-3.6.0.min.js"></script>
     <script src="/lib/jquery/jquery.maphilight.js"></script>
     <script src="/lib/jquery/jquery.scrollUp.min.js"></script>
+    <!-- owlcarousel -->
+    <link rel="stylesheet" href="/lib/owlcarousel/css/owl.carousel.min.css">
+    <script src="/lib/owlcarousel/js/owl.carousel.min.js"></script>
 
 
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="css/sr_website.css">
+    <link rel="stylesheet" type="text/css" href="css/owl_carousle.css">
     <!-- JS -->
     <script src="/js/sr_website.js"></script>
 
@@ -184,120 +188,76 @@
     </div>
     <!--breadcrumbs area end-->
 
-    <!-- WEBTV -->
     <div class="section_blogs">
-      <div class="blog_top_image">
-          <img title="TODO" src="/img/natural-earth-tone-color-palet.png" alt="">
+      <div class="blog_image_top">
+          <img title="TODO" src="/img/blog_top.png" alt="">
       </div>
-      <div class="container">
-        <div class="row ">
-          <div class="col-12 section_webtv_content">
-            <div class="col-lg-7 col-md-12 col-ms-12 col_webtv">
-                <div class="webtv-title">
-                    <h5>Les Services de Remplacement recrutent</h5>
-                    <p>rejoignez un réseau de 13 000 salariés et exercez un métier porteur de sens !</p>
-                </div>
+      <div class="container blog_main">
+        <div class="row blog_content">
+          <div class="col-1 blog_content_left">
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-print"></i>
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="col-11 blog_content_right">
+            <p class="blog_content_date">Paru le 13/02/21</p>
+            <div class="blog_content_title">
+              <h4>FRANCE : LES SERVICES DE REMPLACEMENT EN AGRICULTURE, UN SERVICE PROCHE
+                DES AGRICULTEURS ET DES TERRITOIRES : RAPPORT DU CGAAER</h4>
             </div>
-            <div class="row">
-                <div class="col-lg-10 col-md-12">
-                    <p class="webtv-date">Paru le 13/02/21</p>
-                </div>
+            <div class="blog_content_content">
+              <!-- TODO: may be apply field html on odoo -->
+              <p>A la demande du Cabinet du Ministre de l’agriculture, le CGAAER a mené, durant un an, une mission sur le service rendu aux agriculteurs par les Services de Remplacement.</p>
+              <p>Près de 90 auditions ont été réalisées au sein des Services de Remplacement et également de leurs différents partenaires : Ministère de l’agriculture, Mutualité Sociale Agricole, Chambre d’agriculture, Groupama, Confédération Paysanne, Coordination Rurale, FNSEA, FNGEAR, Direccte, Chambre régionale d’agriculture, DRAAF, Conseil Régional, Conseil Départemental, DGFIP, …</p>
             </div>
-            <div class="row webtv-video-title">
-                <div class="col-lg-10 col-md-12">
-                    <h6>Osez vaincre les idées reçues sur le Service de Remplacement</h6>
-                    <span>Les Services de Remplacement recrutent : rejoignez un réseau de 13 000 salariés et exercez un métier porteur de sens !</span>
+            <div class="section_news">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 news_title">
+                    <i class="fas fa-newspaper"></i>
+                    <p class="title_news">NOS DERNIÈRES ACTUALITÉS</p>
+                  </div>
                 </div>
-            </div>
-            <div class="row text-quote">
-                <div class="col-lg-10 col-md-12">
-                    <p>Service de Remplacement</p>
-                    <p>894 vues</p>
-                </div>
-            </div>
-            <div class="row video-youtube">
-                <div class="col-lg-9 col-md-12 col-ms-12">
-                    <p>TODO: uncomment here</p>
-                    <iframe src="https://www.youtube.com/embed/jHiVKCrvk7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 col-md-12 webtv-icons">
-                    <!-- TODO: update write link -->
-                    <a href="https://twitter.com/SRemplacement51" target="_blank" class="custom_icon">
-                        <i class="fab fa-twitter"></i>
+                <div class="row list_news">
+                  <div class="col-11 list_new">
+                    <div class="owl-carousel arrow-dark arrow-large arrow-border owl-loaded owl-drag" data-margin="0" data-arrow="true" data-dots="false" data-items-xl="3" data-items-lg="3" data-items-md="2" data-items-sm="1" data-items-xs="1" data-autoplay="4000" data-pause="false">
+                      <a class="new_1" style="background-image: url('/img/Image_placeholder_gbv.png');">
+                          <div class="news_name">
+                              <p class="news_name_title">Covid-19: Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents! Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents!</p>
+                              <i class="fas fa-share"></i>
+                          </div>
+                      </a>
+                      <!-- <a class="new_1" style="background-image: url('/img/Image_placeholder_gbv.png');">
+                        <div class="news_name">
+                            <p class="news_name_title">Covid-19: Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents! Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents!</p>
+                            <i class="fas fa-share"></i>
+                        </div>
                     </a>
-                    <a href="https://www.facebook.com/servicederemplacement" target="_blank" class="custom_icon">
-                        <i class="fab fa-facebook-f"></i>
+
+                    <a class="new_1" style="background-image: url('/img/Image_placeholder_gbv.png');">
+                        <div class="news_name">
+                            <p class="news_name_title">Covid-19: Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents! Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents!</p>
+                            <i class="fas fa-share"></i>
+                        </div>
                     </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 col-md-12">
-                    <div class="our_latest_webtv_title">
-                        <p>NOS DERNIÈRES WEBTV</p>
+
+                    <a class="new_1" style="background-image: url('/img/Image_placeholder_gbv.png');">
+                        <div class="news_name">
+                            <p class="news_name_title">Covid-19: Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents! Le Mémo Santé Enfant de la MSA, l’aide-mémoire des parents!</p>
+                            <i class="fas fa-share"></i>
+                        </div>
+                    </a> -->
                     </div>
+                  </div>
                 </div>
-            </div>
-            <!-- TODO: separate this block -->
-            <div class="list_webtv">
-                <div class="row our_latest_webtv">
-                    <div class="col-lg-10 col-md-12 our_latests_webtv">
-                        <div class="our_latests_webtv_left">
-                            <img title="TODO" src="/img/webtv_1.png" alt="">
-                        </div>
-                        <div class="our_latests_webtv_right">
-                            <p class="webtv-date">Paru le 13/02/21</p>
-                            <div class="our_latests_webtv_right_main">
-                                <h5>Le projet institutionnel des Services de Remplacement</h5>
-                                <p>Les Services de Remplacement recrutent : rejoignez un réseau de 13 000 salariés et exercez un métier porteur de sens!</p>
-                            </div>
-                            <div class="our_latests_webtv_right_quote">
-                                <p>Service de Remplacement</p>
-                                <p>2894 vues</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row our_latest_webtv">
-                    <div class="col-lg-10 col-md-12 our_latests_webtv">
-                        <div class="our_latests_webtv_left">
-                            <img title="TODO" src="/img/webtv_2.png" alt="">
-                        </div>
-                        <div class="our_latests_webtv_right">
-                            <p class="webtv-date">Paru le 13/02/21</p>
-                            <div class="our_latests_webtv_right_main">
-                                <h5>Le projet institutionnel des Services de Remplacement</h5>
-                                <p>Les Services de Remplacement recrutent : rejoignez un réseau de 13 000 salariés et exercez un métier porteur de sens!</p>
-                            </div>
-                            <div class="our_latests_webtv_right_quote">
-                                <p>Service de Remplacement</p>
-                                <p>2894 vues</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row our_latest_webtv">
-                    <div class="col-lg-10 col-md-12 our_latests_webtv">
-                        <div class="our_latests_webtv_left">
-                            <img title="TODO" src="/img/webtv_3.png" alt="">
-                        </div>
-                        <div class="our_latests_webtv_right">
-                            <p class="webtv-date">Paru le 13/02/21</p>
-                            <div class="our_latests_webtv_right_main">
-                                <h5>Le projet institutionnel des Services de Remplacement</h5>
-                                <p>Les Services de Remplacement recrutent : rejoignez un réseau de 13 000 salariés et exercez un métier porteur de sens!</p>
-                            </div>
-                            <div class="our_latests_webtv_right_quote">
-                                <p>Service de Remplacement</p>
-                                <p>2894 vues</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
+
+      </div>
+      <div class="blog_image_bottom">
+        <img title="TODO" src="/img/blog_bottom.png" alt="">
       </div>
     </div>
     <!-- END WEBTV -->

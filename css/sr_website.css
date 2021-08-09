@@ -178,6 +178,7 @@ button.popup-login {
   height: 100%;
   width: 100%;
   justify-content: flex-end;
+  position: relative;
 }
 
 .pop_up_login_icon {
@@ -264,12 +265,12 @@ html.ie11 .scroll-to-top {
 .login-popup {
   position: absolute;
   opacity: 0;
-  top: 0;
-  right: 10px;
+  top: 100%;
+  right: 0px !important;
   border: 1px solid #04AA6D;
   background-color: #04AA6D;
   z-index: 3;
-  width: 290px;
+  width: 279px;
   visibility: hidden;
   transition: visibility 0.5s, opacity .5s linear;
 }

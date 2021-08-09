@@ -120,41 +120,34 @@
                                 <i id="icon-down" class="fas fa-chevron-down down active"></i>
                                 <i id="icon-up" class="fas fa-chevron-up up"></i>
                             </button>
+                            <div class="login-popup" id="formLogin">
+                                <form action="" class="form-container">
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <input type="radio" class="radio-btn" name="choice" id="agent" />
+                                            <label for="agent" class="label">AGENT</label>
+                                        </li>
+
+                                        <li class="list__item">
+                                            <input type="radio" class="radio-btn" name="choice" id="exploitant" />
+                                            <label for="exploitant" class="label">EXPLOITANT</label>
+                                        </li>
+                                    </ul>
+
+                                    <input type="text" placeholder="Identifiant" name="email" required/>
+                                    <input type="password" placeholder="Mot de passe" name="psw" required/>
+
+                                    <button id="buttonLogin" class="popup-login justify-content-between btn">
+                                        <div style="padding-top: 10px; padding-bottom: 10px;">
+                                            <span class="content-to-hide-767" >SE CONNECTER</span>
+                                        </div>
+                                        <i class="fas fa-check fa-2x"></i>
+                                    </button>
+                                    <a href="">Première connexion</a>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="login-popup" id="formLogin">
-                    <form action="" class="form-container">
-                        <ul class="list">
-                            <li class="list__item">
-                                <input type="radio" class="radio-btn" name="choice" id="agent" />
-                                <label for="agent" class="label">AGENT</label>
-                            </li>
-
-                            <li class="list__item">
-                                <input type="radio" class="radio-btn" name="choice" id="exploitant" />
-                                <label for="exploitant" class="label">EXPLOITANT</label>
-                            </li>
-                        </ul>
-
-                        <input type="text" placeholder="Identifiant" name="email" required/>
-                        <input type="password" placeholder="Mot de passe" name="psw" required/>
-
-                        <button id="buttonLogin" class="popup-login justify-content-between btn">
-                            <div style="padding-top: 10px; padding-bottom: 10px;">
-                                <span class="content-to-hide-767" >SE CONNECTER</span>
-                            </div>
-                            <i class="fas fa-check fa-2x"></i>
-                        </button>
-                        <a href="">Première connexion</a>
-                    </form>
                 </div>
             </div>
         </div>
